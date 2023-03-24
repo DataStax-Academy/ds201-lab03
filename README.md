@@ -1,14 +1,14 @@
-# DS201 Exercise 02
+# DS201 Exercise 03
 
-## XXXXXXXXX
+## Partitions
 
 **In this hands-on lab, you will:**
-*	AAA
-*	BBB
-*	CCC
+*	Create tables with different partition keys
+* Execute CQL queries over tables with different partition keys
+
 
 
 
 ## Start the hands-on lab:
 
-[![Open in KataPod](https://github.com/DataStax-Academy/katapod-shared-assets/blob/main/images/open-in-katapod.png)](https://gitpod.io/##https://github.com/drchung5/XXXXXXXX/)
+[![Open in KataPod](https://github.com/DataStax-Academy/katapod-shared-assets/blob/main/images/open-in-katapod.png)](https://gitpod.io/##https://github.com/drchung5/ds201-lab03/)
