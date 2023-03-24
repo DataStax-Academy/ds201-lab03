@@ -9,6 +9,7 @@ tasks:
       ./apache-cassandra-4.1.0/bin/cassandra
     init: |
     command: | 
+      cd apache-cassandra-4.1.0/bin
       clear
 github:
   prebuilds:
