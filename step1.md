@@ -43,7 +43,7 @@ USE killrvideo;
 ```
 DESCRIBE TABLE videos;
 ```
-**Question:** What is the table partition key?
+**Question:** What is the partition key for the *videos* table?
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -52,7 +52,7 @@ The <i>video_id</i> column is the primary key.
 </details>
 <br>
 
-**Question:** How any partitions are in this table?
+**Question:** How many partitions are in the *videos* table?
 
 <details><summary><b>Answer</b></summary>
 <p>
