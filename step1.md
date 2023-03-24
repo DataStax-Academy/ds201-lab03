@@ -60,6 +60,12 @@ One partition for each unique <i>video_id</i>.
 </p>
 </details>
 <br>
+
+
+✅ Execute the following query to see how partition key values are mapped to tokens by the partitioner:
+```
+SELECT token(video_id), video_id FROM videos;
+```
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
  <a href='command:katapod.loadPage?[{"step":"intro"}]'
