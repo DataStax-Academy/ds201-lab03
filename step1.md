@@ -66,6 +66,12 @@ One partition for each unique <i>video_id</i>.
 ```
 SELECT token(video_id), video_id FROM videos;
 ```
+
+✅ Exit *cqlsh*:
+```
+quit
+```
+
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
  <a href='command:katapod.loadPage?[{"step":"intro"}]'
