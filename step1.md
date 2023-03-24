@@ -43,7 +43,23 @@ USE killrvideo;
 ```
 DESCRIBE TABLE videos;
 ```
+**Question:** What is the table partition key?
 
+<details><summary><b>Answer</b></summary>
+<p>
+The <i>video_id</i> column is the primary key.
+</p>
+</details>
+<br>
+
+**Question:** How any partitions are in this table?
+
+<details><summary><b>Answer</b></summary>
+<p>
+One partition for each unique <i>video_id</i>.
+</p>
+</details>
+<br>
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
  <a href='command:katapod.loadPage?[{"step":"intro"}]'
