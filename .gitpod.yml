@@ -7,7 +7,6 @@ tasks:
         --output environment.tar.gz
       tar xf environment.tar.gz
       ./apache-cassandra-4.1.0/bin/cassandra
-      cd apache-cassandra-4.1.0/bin 
     init: |
     command: | 
       clear 
