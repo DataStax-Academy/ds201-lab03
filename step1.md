@@ -22,29 +22,26 @@
 
 <div class="step-title">Explore the <em>videos</em> table</div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget purus faucibus, consequat tortor a, feugiat diam. Fusce at tortor sagittis, gravida dolor sed, sollicitudin arcu. Nullam id dolor facilisis, elementum justo a, lobortis justo. Donec lacus magna, ultricies et urna at, congue imperdiet tortor. Vestibulum pulvinar, orci nec bibendum tincidunt, sapien ligula aliquet est, fringilla dictum ex sem vitae ligula. Ut et ultrices ante. Nulla egestas augue erat, vitae volutpat sem porttitor a. Donec ut ligula nulla. Nulla facilisi.
+Use `nodetool` to verify that Cassandra is running. (You may need to run this command multiple times.)
 
-<details><summary>CLICK ME</summary>
-<p>
-
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
+✅ Verify that Cassandra is running.
+```
+apache-cassandra-4.1.0/bin/nodetool status
 ```
 
-</p>
-</details>
-
-
-✅ Do something
+✅ Start 'cqlsh' so you can execute CQL statements:
 ```
-echo "something!"
+apache-cassandra-4.1.0/bin/cqlsh
 ```
 
-✅ Do something else
+✅ Switch to the *killrvideo* keyspace via the `USE` command:
 ```
-echo "something else!"
+USE killrvideo;
+```
+
+✅ Execute the following command to view information about the *videos* table: 
+```
+DESCRIBE TABLE videos;
 ```
 
 <!-- NAVIGATION -->
