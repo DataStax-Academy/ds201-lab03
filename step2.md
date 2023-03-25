@@ -21,14 +21,14 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget purus faucibus, consequat tortor a, feugiat diam. Fusce at tortor sagittis, gravida dolor sed, sollicitudin arcu. Nullam id dolor facilisis, elementum justo a, lobortis justo. Donec lacus magna, ultricies et urna at, congue imperdiet tortor. Vestibulum pulvinar, orci nec bibendum tincidunt, sapien ligula aliquet est, fringilla dictum ex sem vitae ligula. Ut et ultrices ante. Nulla egestas augue erat, vitae volutpat sem porttitor a. Donec ut ligula nulla. Nulla facilisi.
 
-✅ Do something
+✅ Inspect the `videos-by-tag.csv` file that we will import into a new table:
 ```
-echo "something!"
+cat ~/data-files/videos-by-tag.csv
 ```
 
-✅ Do something else
+✅ Start *cqlsh* again:
 ```
-echo "something else!"
+~/apache-cassandra-4.1.0/bin/cqlsh
 ```
 
 <!-- NAVIGATION -->
