@@ -23,12 +23,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget purus fauc
 
 ✅ Inspect the `videos-by-tag.csv` file that we will import into a new table:
 ```
-cat ~/data-files/videos-by-tag.csv
+cat /workspace/ds201-lab03/data-files/videos-by-tag.csv
 ```
 
 ✅ Start *cqlsh* again:
 ```
-~/apache-cassandra-4.1.0/bin/cqlsh
+/workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cqlsh
 ```
 
 <!-- NAVIGATION -->
