@@ -12,14 +12,14 @@
  <a href='command:katapod.loadPage?[{"step":"step1"}]'
    class="btn btn-dark navigation-bottom-left">⬅️ Back
  </a>
-<span class="step-count"> Step 2 of 2</span>
+<span class="step-count"> Step 2 of 3</span>
+ <a href='command:katapod.loadPage?[{"step":"step3"}]' 
+    class="btn btn-dark navigation-top-right">Next ➡️
+  </a>
 </div>
 
 <!-- CONTENT -->
-
 <div class="step-title">Create the <i>videos-by-tag</i> table</div>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget purus faucibus, consequat tortor a, feugiat diam. Fusce at tortor sagittis, gravida dolor sed, sollicitudin arcu. Nullam id dolor facilisis, elementum justo a, lobortis justo. Donec lacus magna, ultricies et urna at, congue imperdiet tortor. Vestibulum pulvinar, orci nec bibendum tincidunt, sapien ligula aliquet est, fringilla dictum ex sem vitae ligula. Ut et ultrices ante. Nulla egestas augue erat, vitae volutpat sem porttitor a. Donec ut ligula nulla. Nulla facilisi.
 
 ✅ Inspect the `videos-by-tag.csv` file that we will import into a new table:
 ```
@@ -52,7 +52,7 @@ FROM '/workspace/ds201-lab03/data-files/videos-by-tag.csv'
 WITH HEADER = TRUE;
 ```
 
-✅ Retrieve all rows from table *videos_by_tag* and verify that you get 4 rows as expected.
+✅ Retrieve all rows from table *videos_by_tag* and verify that you get 5 rows as expected.
 ```
 SELECT * FROM videos_by_tag;
 ```
@@ -62,4 +62,7 @@ SELECT * FROM videos_by_tag;
  <a href='command:katapod.loadPage?[{"step":"step1"}]'
    class="btn btn-dark navigation-bottom-left">⬅️ Back
  </a>
+  <a href='command:katapod.loadPage?[{"step":"step3"}]' 
+    class="btn btn-dark navigation-top-right">Next ➡️
+  </a>
 </div>

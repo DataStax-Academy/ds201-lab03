@@ -19,7 +19,6 @@
 </div>
 
 <!-- CONTENT -->
-
 <div class="step-title">Explore the <em>videos</em> table</div>
 
 Use `nodetool` to verify that Cassandra is running. (You may need to run this command multiple times.)
