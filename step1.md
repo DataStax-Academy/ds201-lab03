@@ -61,6 +61,12 @@ One partition for each unique <i>video_id</i>.
 </details>
 <br>
 
+---
+**Note:** This table has a single row in each partition rather than using partitions to group related rows. This is an anti-pattern!
+
+---
+<br>
+
 
 ✅ Execute the following query to see how partition key values are mapped to tokens by the partitioner:
 ```
