@@ -26,9 +26,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget purus fauc
 cat /workspace/ds201-lab03/data-files/videos-by-tag.csv
 ```
 
-✅ Start *cqlsh* again:
+Notice how this CSV file categorizes the videos using *tags*: `datastax`, `cassandra`, and `cql`.
+
+✅ Start *cqlsh* again and switch to the *killrvideo* keyspace:
 ```
 /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cqlsh
+USE killrvideo;
+```
+
+✅ Create a new table with name `videos_by_tag` that can store data from file *videos_by_tag.csv*, such that we get one partition for every tag and each partition can have multiple rows with videos. 
+```
+CREATE TABLE videos_by_tag (
+  tag TEXT,
+  video_id TIMEUUID,
+  added_date TIMESTAMP,
+  title TEXT,
+  PRIMARY KEY ((tag), video_id)
+);
+```
+
+✅ Use the COPY command to import the `videos-by-tag.csv` data into your new table:
+```
+COPY videos_by_tag (tag, video_id, added_date, title)
+FROM '/workspace/ds201-lab03/data-files/videos-by-tag.csv'
+WITH HEADER = TRUE;
+```
+
+✅ Retrieve all rows from table *videos_by_tag* and verify that you get 4 rows as expected.
+```
+SELECT * FROM videos_by_tag;
 ```
 
 <!-- NAVIGATION -->
