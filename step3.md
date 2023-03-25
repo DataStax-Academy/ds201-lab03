@@ -37,7 +37,10 @@ SELECT * FROM videos_by_tag WHERE tag = 'cql';
 ```
 SELECT * FROM videos_by_tag WHERE title = 'Cassandra Query Language';
 ```
-You should see an error
+You should see an error something like this:
+<hr>
+<div style="color:red;">InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING"</div> 
+<hr>
 
 ✅ 
 
