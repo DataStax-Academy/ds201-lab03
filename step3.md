@@ -18,13 +18,26 @@
 <!-- CONTENT -->
 <div class="step-title">Run some queries</div>
 
-✅ 
+✅ Retrieve all videos tagged with `cassandra` from table *videos_by_tag*
+```
+SELECT * FROM videos_by_tag WHERE tag = 'cassandra';
+```
 
-✅ 
+✅ Retrieve all videos tagged with `datastax` from table *videos_by_tag*
+```
+SELECT * FROM videos_by_tag WHERE tag = 'datastax';
+```
 
-✅ 
+✅ Retrieve all videos tagged with `cql` from table *videos_by_tag*
+```
+SELECT * FROM videos_by_tag WHERE tag = 'cql';
+```
 
-✅ 
+✅ Finally, retrieve any video titled `Cassandra Query Language` from table *videos_by_tag*.
+```
+SELECT * FROM videos_by_tag WHERE title = 'Cassandra Query Language';
+```
+You should see an error
 
 ✅ 
 
