@@ -3,13 +3,13 @@ tasks:
     before: |
       printf 'export PATH="$HOME%s:$PATH"\n' "/.astra/cli" >> $HOME/.bashrc
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
-      pyenv install 3.9 && pyenv global 3.9
       curl https://katapod-file-store.s3.us-west-1.amazonaws.com/ds201/lab03-environment.tar.gz \
         --output environment.tar.gz
       tar xf environment.tar.gz
       ./apache-cassandra-4.1.0/bin/cassandra
     init: |
     command: | 
+      pyenv install 3.9 && pyenv global 3.9
       clear 
 github:
   prebuilds:
