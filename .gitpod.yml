@@ -8,7 +8,8 @@ tasks:
       tar xf environment.tar.gz
       ./apache-cassandra-4.1.0/bin/cassandra
     init: |
-      pyenv install 3.9 && pyenv global 3.9
+      pyenv install 3.9
+      pyenv global 3.9
     command: | 
       clear 
 github:
