@@ -2,13 +2,15 @@ tasks:
   - name: install-dependencies
     before: |
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
-      curl https://katapod-file-store.s3.us-west-1.amazonaws.com/ds201/lab03-environment.tar.gz \
-        --output environment.tar.gz
-      tar xf environment.tar.gz
-      ./apache-cassandra-4.1.0/bin/cassandra
+      printf 'export PATH="/workspace/ds201-lab03/apache-cassandra-4.1.0/bin:$PATH"' >> $HOME/.bashrc
     init: |
+      curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
+        --output apache-cassandra-4.1.0-bin.tar.gz
+      tar xf apache-cassandra-4.1.0-bin.tar.gz
     command: | 
-      clear 
+      /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cassandra
+      timeout 60 bash -c 'until cqlsh -e "describe cluster" >/dev/null 2>&1; do sleep 2; echo -n "."; done';
+      echo "STARTED"
 github:
   prebuilds:
     main: true
