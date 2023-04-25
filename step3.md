@@ -22,9 +22,16 @@
 <div class="step-title">Run some queries</div>
 
 ✅ Retrieve all videos tagged with `cassandra` from table *videos_by_tag*
+
+<details class="katapod-details">
+  <summary>Solution</summary>
+
 ```
 SELECT * FROM videos_by_tag WHERE tag = 'cassandra';
 ```
+
+</details>
+<br>
 
 ✅ Retrieve all videos tagged with `datastax` from table *videos_by_tag*
 
@@ -35,7 +42,7 @@ SELECT * FROM videos_by_tag WHERE tag = 'cassandra';
 SELECT * FROM videos_by_tag WHERE tag = 'datastax';
 ```
 
-</detail>
+</details>
 <br>
 
 ✅ Retrieve all videos tagged with `cql` from table *videos_by_tag*
@@ -47,7 +54,7 @@ SELECT * FROM videos_by_tag WHERE tag = 'datastax';
 SELECT * FROM videos_by_tag WHERE tag = 'cql';
 ```
 
-</detail>
+</details>
 <br>
 
 ✅ Finally, retrieve any video titled `Cassandra Query Language` from table *videos_by_tag*.
@@ -59,7 +66,7 @@ SELECT * FROM videos_by_tag WHERE tag = 'cql';
 SELECT * FROM videos_by_tag WHERE title = 'Cassandra & SSDs';
 ```
 
-</detail>
+</details>
 <br>
 
 You should see an error something like this. This is expected. Cassandra only allows efficient queries on primary key columns, which for this table doesn’t include the `title` column.
@@ -77,7 +84,7 @@ SELECT * FROM videos_by_tag
 WHERE title = 'Cassandra & SSDs' ALLOW FILTERING;
 ```
 
-</detail>
+</details>
 <br>
 
 
