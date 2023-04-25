@@ -57,7 +57,7 @@ SELECT * FROM videos_by_tag WHERE tag = 'cql';
 </details>
 <br>
 
-✅ Finally, retrieve any video titled `Cassandra Query Language` from table *videos_by_tag*.
+✅ Finally, retrieve any video titled `Cassandra & SSDs` from table *videos_by_tag*.
 
 <details class="katapod-details">
   <summary>Solution</summary>
