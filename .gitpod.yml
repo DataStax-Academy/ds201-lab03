@@ -9,7 +9,7 @@ tasks:
       tar xf apache-cassandra-4.1.0-bin.tar.gz
     command: | 
       /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cassandra
-      bash -c 'until cqlsh -e "describe cluster" >/dev/null 2>&1; do sleep 2; echo -n "."; done';
+      cqlsh -e "describe cluster"
       echo "STARTED"
 github:
   prebuilds:
