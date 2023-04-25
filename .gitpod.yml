@@ -12,7 +12,7 @@ tasks:
   - name: load-data
     command: |
       gp ports await 9042
-      cqlsh - e "CREATE KEYSPACE killrvideo WITH replication = { 'class':'SimpleStrategy', 'replication_factor': 1 };"
+      cqlsh -e "CREATE KEYSPACE killrvideo WITH replication = { 'class':'SimpleStrategy', 'replication_factor': 1 };"
 github:
   prebuilds:
     main: true
