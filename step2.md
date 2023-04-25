@@ -67,6 +67,11 @@ WITH HEADER = TRUE;
 ```
 
 ✅ Retrieve all rows from table *videos_by_tag* and verify that you get 5 rows as expected.
+
+If the table only has 2 rows instead of 5, make sure that the table primary key has enough columns so that it can uniquely identify each row.
+
+You can always execute `DROP TABLE videos_by_tag;` and go back to the previous steps to make any necessary corrections.
+
 ```
 SELECT * FROM videos_by_tag;
 ```
