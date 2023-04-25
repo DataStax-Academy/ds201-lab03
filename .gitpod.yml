@@ -6,14 +6,12 @@ tasks:
     init: |
       curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
-      tar xf apache-cassandra-4.1.0-bin.tar.gz
-      /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cassandra
+      tar xf apache-cassandra-4.1.0-bin.tar.gz      
     command: | 
-      
-  - name: load-data
-    command: |
+      /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cassandra
       gp ports await 9042
       cqlsh -e "CREATE KEYSPACE killrvideo WITH replication = { 'class':'SimpleStrategy', 'replication_factor': 1 };"
+      
 github:
   prebuilds:
     main: true
