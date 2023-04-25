@@ -9,10 +9,10 @@ tasks:
       tar xf apache-cassandra-4.1.0-bin.tar.gz
     command: | 
       /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cassandra
-      gp sync-done server-start
   - name: load-data
-    init: gp sync-await server start
-    command: cqlsh - e "CREATE KEYSPACE killrvideo WITH replication = { 'class':'SimpleStrategy', 'replication_factor': 1 };"
+    command: |
+      gp ports await 9042
+      cqlsh - e "CREATE KEYSPACE killrvideo WITH replication = { 'class':'SimpleStrategy', 'replication_factor': 1 };"
 github:
   prebuilds:
     main: true
