@@ -29,12 +29,23 @@ cat /workspace/ds201-lab03/data-files/videos-by-tag.csv
 Notice how this CSV file categorizes the videos using *tags*: `datastax`, `cassandra`, and `cql`.
 
 ✅ Start *cqlsh* again and switch to the *killrvideo* keyspace:
+
+<details class="katapod-details">
+  <summary>Solution</summary>
+
 ```
 /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cqlsh
 USE killrvideo;
 ```
 
+</details>
+<br>
+
 ✅ Create a new table with name `videos_by_tag` that can store data from file *videos_by_tag.csv*, such that we get one partition for every tag and each partition can have multiple rows with videos. 
+
+<details class="katapod-details">
+  <summary>Solution</summary>
+
 ```
 CREATE TABLE videos_by_tag (
   tag TEXT,
@@ -44,6 +55,9 @@ CREATE TABLE videos_by_tag (
   PRIMARY KEY ((tag), video_id)
 );
 ```
+
+</details>
+<br>
 
 ✅ Use the COPY command to import the `videos-by-tag.csv` data into your new table:
 ```

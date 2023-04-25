@@ -34,9 +34,16 @@ apache-cassandra-4.1.0/bin/cqlsh
 ```
 
 ✅ Switch to the *killrvideo* keyspace via the `USE` command:
+
+<details class="katapod-details">
+  <summary>Solution</summary>
+
 ```
 USE killrvideo;
 ```
+
+</details>
+<br>
 
 ✅ Execute the following command to view information about the *videos* table: 
 ```
