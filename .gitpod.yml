@@ -9,7 +9,6 @@ tasks:
       tar xf apache-cassandra-4.1.0-bin.tar.gz
     command: | 
       /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cassandra
-      timeout 60 bash -c 'until cqlsh -e "describe cluster" >/dev/null 2>&1; do sleep 2; echo -n "."; done';
       echo "STARTED"
 github:
   prebuilds:
