@@ -7,8 +7,9 @@ tasks:
       curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
       tar xf apache-cassandra-4.1.0-bin.tar.gz
-    command: | 
       /workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cassandra
+    command: | 
+      
   - name: load-data
     command: |
       gp ports await 9042
