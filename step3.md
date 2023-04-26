@@ -77,7 +77,7 @@ You should see an error something like this. This is expected. Cassandra only al
 ✅ For now, you can use ALLOW FILTERING to execute this query but should know that <span style="color:red;">this is anti-pattern!!!</span>: the query requires scanning all rows in the table, which is not feasible for real-life large data sets.
 
 <details class="katapod-details">
-  <summary>Solution</summary>
+  <summary>Solution (It's not really a solution!!!)</summary>
 
 ```
 SELECT * FROM videos_by_tag 
