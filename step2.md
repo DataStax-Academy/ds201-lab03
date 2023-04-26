@@ -34,7 +34,7 @@ Notice how this CSV file categorizes the videos using *tags*: `datastax`, `cassa
   <summary>Solution</summary>
 
 ```
-/workspace/ds201-lab03/apache-cassandra-4.1.0/bin/cqlsh
+cqlsh
 USE killrvideo;
 ```
 
